@@ -18,23 +18,20 @@ Objetivo: Mostrar os códigos de quiz utilizados no curso da udacity
  * 3. Log the awesomeMessage variable to the console.
  */
 
-/*
- * Notes:
- * - The `awesomeMessage` should have the format of:
- *   Hi, my name is _____. I love _____. In my spare time, I like to _______.
- *
- * - Using the above as an example, firstName would have been assigned to "Julia",
- *   interest to "cats", and hobby to "play video games" to produce the message:
- *   Hi, my name is Julia. I love cats. In my spare time, I like to play video games.
- *
- * - Be sure to include spaces and periods where necessary!
- */
+ /*
+  * Programming Quiz: Even or Odd (3-2)
+  *
+  * Write an if...else statement that prints `even` if the
+  * number is even and prints `odd` if the number is odd.
+  *
+  * Note - make sure to print only the string "even" or the string "odd"
+  */
 
-// Add your code here
-var firstName = "Elian";
-var interest = "Programming";
-var hobby = "Sleep";
+ // change the value of `number` to test your if...else statement
+ var number = 2;
 
-var awesomeMessage = "Hi, my name is " + firstName + ". I love " + interest + ". In my spare time, I like to " + hobby + ".";
-
-console.log(awesomeMessage);
+ if (number % 2 === 0) {
+     console.log("even");
+ } else {
+     console.log("odd");
+ }
