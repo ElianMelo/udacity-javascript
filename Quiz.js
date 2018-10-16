@@ -7,24 +7,43 @@ Objetivo: Mostrar os códigos de quiz utilizados no curso da udacity
 */
 
 /*
- * Programming Quiz - Navigating the Food Chain (3-8)
+ * Programming Quiz: Back to School (3-9)
  *
- * Use a series of ternary operator to set the category to one of the following:
- *   - "herbivore" if an animal eats plants
- *   - "carnivore" if an animal eats animals
- *   - "omnivore" if an animal eats plants and animals
- *   - undefined if an animal doesn't eat plants or animals
+ * Write a switch statement to set the average salary of a person based on their type of completed education.
  *
- * Notes
- *   - use the variables `eatsPlants` and `eatsAnimals` in your ternary expressions
- *   - `if` statements aren't allowed ;-)
  */
 
-// change the values of `eatsPlants` and `eatsAnimals` to test your code
-var eatsPlants = false;
-var eatsAnimals = true;
+// change the value of `education` to test your code
+var education = 'no high school diploma';
 
-var category = eatsPlants && eatsAnimals ? "omnivore" : eatsPlants && !eatsAnimals ? "herbivore": !eatsPlants && eatsAnimals ? "carnivore" : undefined ;
+// set the value of this based on a person's education
+var salary = 0;
 
+// your code goes here
+switch(education){
+    case "no high school diploma":
+        salary = 25636;
+        break;
+    case "a high school diploma":
+        salary = 35256;
+        break;
+    case "an Associate's degree":
+        salary = 41496;
+        break;
+    case "a Bachelor's degree":
+        salary = 59124;
+        break;
+    case "a Master's degree":
+        salary = 69732;
+        break;
+    case "a Professional degree":
+        salary = 89960;
+        break;
+    case "a Doctoral degree":
+        salary = 84396;
+        break;
+}
 
-console.log(category);
+salary = salary.toLocaleString("en-US");
+
+console.log("In 2015, a person with " + education + " earned an average of $" + salary + "/year.");
