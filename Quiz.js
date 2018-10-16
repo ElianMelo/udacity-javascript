@@ -7,11 +7,8 @@ Objetivo: Mostrar os códigos de quiz utilizados no curso da udacity
 */
 
 /*
- * Programming Quiz: Semicolons! (2-8)
+ * Programming Quiz: What's my Name? (2-9)
  */
 
 // your code goes here
-var thingOne = "red";
-var thingTwo = "blue";
-
-console.log(thingOne + " " + thingTwo);
+var fullName = "Elian Melo Morais";
