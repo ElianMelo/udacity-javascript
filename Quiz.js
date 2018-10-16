@@ -7,8 +7,11 @@ Objetivo: Mostrar os códigos de quiz utilizados no curso da udacity
 */
 
 /*
- * Programming Quiz: Yosa Buson (2-6)
+ * Programming Quiz: Semicolons! (2-8)
  */
 
-var haiku = "Blowing from the west"+"\nFallen leaves gather"+"\nIn the east.";
-console.log(haiku);
+// your code goes here
+var thingOne = "red";
+var thingTwo = "blue";
+
+console.log(thingOne + " " + thingTwo);
