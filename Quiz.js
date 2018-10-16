@@ -7,9 +7,8 @@ Objetivo: Mostrar os códigos de quiz utilizados no curso da udacity
 */
 
 /*
- * Programming Quiz: String Equality for All (2-4)
+ * Programming Quiz: All Tied Up (2-5)
  */
 
-// fix the right side of the expression
-var answer = "ALL Strings are CrEaTeD equal" == "ALL Strings are CrEaTeD equal";
-console.log(answer);
+var joke = "Sabe a piada do não nem eu?\nNão... nem eu";
+console.log(joke);
