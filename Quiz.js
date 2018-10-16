@@ -7,23 +7,30 @@ Objetivo: Mostrar os códigos de quiz utilizados no curso da udacity
 */
 
 /*
- * Programming Quiz: Musical Groups (3-3)
+ * Programming Quiz: Murder Mystery (3-4)
  */
 
-// change the value of `musicians` to test your conditional statements
-var musicians = 1;
+// change the value of `room` and `suspect` to test your code
+var room = "dining room";
+var suspect = "Mr. Parkes";
 
-// your code goes here
-if(musicians <= 0){
-    console.log("not a group");
-}else if(musicians == 1){
-    console.log("solo");
-}else if(musicians == 2){
-    console.log("duet");
-}else if(musicians == 3){
-    console.log("trio");
-}else if(musicians == 4){
-    console.log("quartet");
-}else{
-    console.log("this is a large group");
+var weapon = "";
+var solved = false;
+
+if (room == "ballroom") {
+    weapon = "poison";
+    solved = true;
+} else if (room == "gallery") {
+    weapon = "trophy";
+    solved = true;
+} else if (room == "billiards room") {
+    weapon = "pool stick";
+    solved = true;
+} else {
+    weapon = "knife";
+    solved = true;
+}
+
+if (solved) {
+	console.log(suspect + " did it in the " + room  + " with the " + weapon + "!");
 }
