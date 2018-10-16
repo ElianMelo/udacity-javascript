@@ -7,8 +7,11 @@ Objetivo: Mostrar os códigos de quiz utilizados no curso da udacity
 */
 
 /*
- * Programming Quiz: What's my Name? (2-9)
+ * Programming Quiz: Out to Dinner (2-10)
  */
 
 // your code goes here
-var fullName = "Elian Melo Morais";
+var bill = 10.25 + 3.99 + 7.15;
+var tip = bill * 0.15;
+var total = bill + tip;
+console.log(total);
