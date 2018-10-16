@@ -7,8 +7,8 @@ Objetivo: Mostrar os códigos de quiz utilizados no curso da udacity
 */
 
 /*
- * Programming Quiz: All Tied Up (2-5)
+ * Programming Quiz: Yosa Buson (2-6)
  */
 
-var joke = "Sabe a piada do não nem eu?\nNão... nem eu";
-console.log(joke);
+var haiku = "Blowing from the west"+"\nFallen leaves gather"+"\nIn the east.";
+console.log(haiku);
