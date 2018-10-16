@@ -7,11 +7,18 @@ Objetivo: Mostrar os códigos de quiz utilizados no curso da udacity
 */
 
 /*
- * Programming Quiz: First Expression (2-1)
+ * Programming Quiz: Converting Tempatures (2-2)
  *
- * Write an expression that uses at least three, different, arithmetic operators
- * to log the number 42 to the console.
+ * The Celsius-to-Fahrenheit formula:
+ *
+ *    F = C x 1.8 + 32
+ *
+ * 1. Set the fahrenheit variable to the correct value using the celsius variable and the forumla above
+ * 2. Log the fahrenheit variable to the console
+ *
  */
 
-// this expression equals 4, change it to equal 42
-console.log(2 * 42 / 2 - 42 + 42);
+var celsius = 12;
+var fahrenheit = celsius * 1.8 + 32;
+
+console.log(fahrenheit);
