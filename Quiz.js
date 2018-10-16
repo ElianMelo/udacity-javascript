@@ -7,18 +7,34 @@ Objetivo: Mostrar os códigos de quiz utilizados no curso da udacity
 */
 
 /*
- * Programming Quiz: MadLibs (2-11)
+ * Programming Quiz: One Awesome Message (2-12)
  *
- * 1. Declare a madLib variable
- * 2. Use the adjective1, adjective2, and adjective3 variables to set the madLib variable to the message:
- *
- * 'The Intro to JavaScript course is amazing. James and Julia are so fun. I cannot wait to work through the rest of this entertaining content!'
+ * 1. Create the following variables:
+ *     - firstName
+ *     - interest
+ *     - hobby
+ * 2. Create a variable named awesomeMessage and set it to an awesome message using
+      string concatenation and the variables above.
+ * 3. Log the awesomeMessage variable to the console.
  */
 
-var adjective1 = 'amazing';
-var adjective2 = 'fun';
-var adjective3 = 'entertaining';
+/*
+ * Notes:
+ * - The `awesomeMessage` should have the format of:
+ *   Hi, my name is _____. I love _____. In my spare time, I like to _______.
+ *
+ * - Using the above as an example, firstName would have been assigned to "Julia",
+ *   interest to "cats", and hobby to "play video games" to produce the message:
+ *   Hi, my name is Julia. I love cats. In my spare time, I like to play video games.
+ *
+ * - Be sure to include spaces and periods where necessary!
+ */
 
-// your code goes here
+// Add your code here
+var firstName = "Elian";
+var interest = "Programming";
+var hobby = "Sleep";
 
-var madLib = "The Intro to JavaScript course is " + adjective1  + ". James and Julia are so " + adjective2 + ". I cannot wait to work through the rest of this " + adjective3 + " content!";
+var awesomeMessage = "Hi, my name is " + firstName + ". I love " + interest + ". In my spare time, I like to " + hobby + ".";
+
+console.log(awesomeMessage);
