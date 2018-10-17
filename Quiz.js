@@ -7,13 +7,26 @@ Objetivo: Mostrar os códigos de quiz utilizados no curso da udacity
 */
 
 /*
- * Programming Quiz: Laugh it Off 1 (5-1)
+ * Programming Quiz: Laugh it Off 2 (5-2)
+ *
+ * Write a function called `laugh` with a parameter named `num` that represents the number of "ha"s to return.
+ *
+ * Note:
+ *  - make sure your the final character is an exclamation mark ("!")
+ *  - make sure that your function produces the correct results when it is called multiple times
  */
 
-// your code goes here
+function laugh(num){
+    var laugh = "";
+    for(var i = 0; i < num; i++){
+        if(i !== num - 1){
+            laugh += "ha";
+        }else{
+            laugh += "ha!";
+        }
+    }
 
-function laugh(){
-    return "hahahahahahahahahaha!";
+    return laugh;
 }
 
-console.log(laugh());
+console.log(laugh(3));
