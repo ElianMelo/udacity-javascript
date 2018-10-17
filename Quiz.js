@@ -7,14 +7,17 @@ Objetivo: Mostrar os códigos de quiz utilizados no curso da udacity
 */
 
 /*
- * Programming Quiz: The Price is Right (6-3)
+ * Programming Quiz: Colors of the Rainbow (6-4)
+ *
+ * Use only the splice() method to modify the rainbow variable:
+ *  - remove "Blackberry"
+ *  - add "Yellow" and "Green"
+ *  - add "Purple"
  */
 
-var prices = [1.23, 48.11, 90.11, 8.50, 9.99, 1.00, 1.10, 67.00];
+var rainbow = ['Red', 'Orange', 'Blackberry', 'Blue'];
 
 // your code goes here
-prices[0] = 2.00;
-prices[2] = 2.00;
-prices[6] = 2.00;
-
-console.log(prices);
+rainbow.splice(2, 1, "Yellow", "Green");
+rainbow.splice(rainbow.length, 0, "Purple");
+console.log(rainbow);
