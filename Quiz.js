@@ -7,18 +7,13 @@ Objetivo: Mostrar os códigos de quiz utilizados no curso da udacity
 */
 
 /*
- * Programming Quiz: Laugh (5-4)
+ * Programming Quiz: Cry (5-5)
  */
 
-var laugh = /* finish the function expression */
-function(quant){
-    var risada = "";
-    for(var i = 1; i <= quant; i++){
-        risada += "ha";
-    }
-    risada += "!";
-    return risada;
+// your code goes here
+var cry =
+function cry(){
+    return "boohoo!";
 }
 
-
-console.log(laugh(10));
+cry();
