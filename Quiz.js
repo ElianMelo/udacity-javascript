@@ -7,17 +7,23 @@ Objetivo: Mostrar os códigos de quiz utilizados no curso da udacity
 */
 
 /*
- * Programming Quiz: Quidditch Cup (6-5)
+ * Programming Quiz: Joining the Crew (6-6)
  */
 
-// your code goes here
-function hasEnoughPlayers(time){
-    if(time.length >= 7){
-        return true;
-    }else{
-        return false;
-    }
-}
+var captain = "Mal";
+var second = "Zoe";
+var pilot = "Wash";
+var companion = "Inara";
+var mercenary = "Jayne";
+var mechanic = "Kaylee";
 
-var team = ["Oliver Wood", "Angelina Johnson", "Katie Bell", "Alicia Spinnet", "George Weasley", "Fred Weasley", "Harry Potter"];
-console.log(hasEnoughPlayers(team));
+var crew = [captain, second, pilot, companion, mercenary, mechanic];
+
+var doctor = "Simon";
+var sister = "River";
+var shepherd = "Book";
+
+// your code goes here
+crew.push(doctor);
+crew.push(sister);
+crew.push(shepherd);
