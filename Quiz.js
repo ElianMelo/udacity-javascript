@@ -7,17 +7,17 @@ Objetivo: Mostrar os códigos de quiz utilizados no curso da udacity
 */
 
 /*
- * Programming Quiz: Colors of the Rainbow (6-4)
- *
- * Use only the splice() method to modify the rainbow variable:
- *  - remove "Blackberry"
- *  - add "Yellow" and "Green"
- *  - add "Purple"
+ * Programming Quiz: Quidditch Cup (6-5)
  */
 
-var rainbow = ['Red', 'Orange', 'Blackberry', 'Blue'];
-
 // your code goes here
-rainbow.splice(2, 1, "Yellow", "Green");
-rainbow.splice(rainbow.length, 0, "Purple");
-console.log(rainbow);
+function hasEnoughPlayers(time){
+    if(time.length >= 7){
+        return true;
+    }else{
+        return false;
+    }
+}
+
+var team = ["Oliver Wood", "Angelina Johnson", "Katie Bell", "Alicia Spinnet", "George Weasley", "Fred Weasley", "Harry Potter"];
+console.log(hasEnoughPlayers(team));
