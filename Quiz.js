@@ -7,17 +7,14 @@ Objetivo: Mostrar os códigos de quiz utilizados no curso da udacity
 */
 
 /*
- * Programming Quiz: Building the Crew (6-2)
+ * Programming Quiz: The Price is Right (6-3)
  */
 
-var captain = "Mal";
-var second = "Zoe";
-var pilot = "Wash";
-var companion = "Inara";
-var mercenary = "Jayne";
-var mechanic = "Kaylee";
+var prices = [1.23, 48.11, 90.11, 8.50, 9.99, 1.00, 1.10, 67.00];
 
 // your code goes here
-var crew = [captain, second, pilot, companion, mercenary, mechanic];
+prices[0] = 2.00;
+prices[2] = 2.00;
+prices[6] = 2.00;
 
-console.log(crew);
+console.log(prices);
