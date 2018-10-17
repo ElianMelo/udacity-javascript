@@ -7,26 +7,26 @@ Objetivo: Mostrar os códigos de quiz utilizados no curso da udacity
 */
 
 /*
- * Programming Quiz: Laugh it Off 2 (5-2)
- *
- * Write a function called `laugh` with a parameter named `num` that represents the number of "ha"s to return.
- *
- * Note:
- *  - make sure your the final character is an exclamation mark ("!")
- *  - make sure that your function produces the correct results when it is called multiple times
+ * Programming Quiz: Build A Triangle (5-3)
  */
 
-function laugh(num){
-    var laugh = "";
-    for(var i = 0; i < num; i++){
-        if(i !== num - 1){
-            laugh += "ha";
-        }else{
-            laugh += "ha!";
-        }
-    }
-
-    return laugh;
+// creates a line of * for a given length
+function makeLine(length) {
+  var line = "";
+  for (var j = 1; j <= length; j++) {
+    line += "* "
+  }
+  return line + "\n";
 }
 
-console.log(laugh(3));
+// your code goes here.  Make sure you call makeLine() in your own code.
+function buildTriangle(length){
+    var triangle = "";
+    for(var i = 1; i <= length; i++){
+        triangle += makeLine(i);
+    }
+    return triangle;
+}
+
+// test your code by uncommenting the following line
+console.log(buildTriangle(10));
