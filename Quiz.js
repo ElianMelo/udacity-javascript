@@ -7,13 +7,25 @@ Objetivo: Mostrar os códigos de quiz utilizados no curso da udacity
 */
 
 /*
- * Programming Quiz: Cry (5-5)
+ * Programming Quiz: Inline Functions (5-6)
  */
 
-// your code goes here
-var cry =
-function cry(){
-    return "boohoo!";
+// don't change this code
+function emotions(myString, myFunc) {
+    console.log("I am " + myString + ", " + myFunc(2));
 }
 
-cry();
+// your code goes here
+// call the emotions function here and pass in an
+// inline function expression
+
+
+
+emotions("happy", function laugh(quant){
+    var risada = "";
+    for(var i = 1; i <= quant; i++){
+        risada += "ha";
+    }
+    risada += "!";
+    return risada;
+});
