@@ -1,12 +1,19 @@
 /*
- * Programming Quiz: Factorials (4-7)
+Autor: Elian Melo Morais
+
+Data de Criação: 16/10/2018
+
+Objetivo: Mostrar os códigos de quiz utilizados no curso da udacity
+*/
+
+/*
+ * Programming Quiz: Laugh it Off 1 (5-1)
  */
 
 // your code goes here
-var solution = 1;
 
-for(var x = 12; x > 0; x--){
-    solution *= x;
+function laugh(){
+    return "hahahahahahahahahaha!";
 }
 
-console.log(solution);
+console.log(laugh());
