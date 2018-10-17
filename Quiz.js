@@ -7,25 +7,10 @@ Objetivo: Mostrar os códigos de quiz utilizados no curso da udacity
 */
 
 /*
- * Programming Quiz: Inline Functions (5-6)
+ * Programming Quiz: UdaciFamily (6-1)
  */
 
-// don't change this code
-function emotions(myString, myFunc) {
-    console.log("I am " + myString + ", " + myFunc(2));
-}
-
 // your code goes here
-// call the emotions function here and pass in an
-// inline function expression
+var udaciFamily = ["Julia", "James", "Elian"];
 
-
-
-emotions("happy", function laugh(quant){
-    var risada = "";
-    for(var i = 1; i <= quant; i++){
-        risada += "ha";
-    }
-    risada += "!";
-    return risada;
-});
+console.log(udaciFamily);
