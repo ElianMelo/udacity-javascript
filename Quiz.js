@@ -5,27 +5,24 @@ Objetivo: Mostrar os códigos de quiz utilizados no curso da udacity
 */
 
 /*
- * Programming Quiz: Bank Accounts 1 (7-3)
+ * Programming Quiz: Facebook Friends (7-5)
  */
 
-var savingsAccount = {
-    balance: 1000,
-    interestRatePercent: 1,
-    deposit: function addMoney(amount) {
-        if (amount > 0) {
-            savingsAccount.balance += amount;
-        }
+// your code goes here
+var facebookProfile = {
+    name: "Elian",
+    friends: 5,
+    messages: ["I don't have money", "i want to break free"],
+    postMessage: function addMessage(message){
+        facebookProfile.messages.push(message);
     },
-    withdraw: function removeMoney(amount) {
-        var verifyBalance = savingsAccount.balance - amount;
-        if (amount > 0 && verifyBalance >= 0) {
-            savingsAccount.balance -= amount;
-        }
+    deleteMessage: function removeMessage(index){
+        facebookProfile.messages.splice(index, 1);
     },
-    // your code goes here
-    printAccountSummary: function accountSummary() {
-        return ("Welcome!\nYour balance is currently $" + savingsAccount.balance + " and your interest rate is " + savingsAccount.interestRatePercent +"%.");
+    addFriend: function addFriend(){
+        facebookProfile.friends += 1;
+    },
+    removeFriend: function removeFriend(){
+        facebookProfile.friends -= 1;
     }
 };
-
-console.log(savingsAccount.printAccountSummary());
