@@ -5,12 +5,27 @@ Objetivo: Mostrar os códigos de quiz utilizados no curso da udacity
 */
 
 /*
- * Programming Quiz: Menu Items (7-2)
+ * Programming Quiz: Bank Accounts 1 (7-3)
  */
 
-// your code goes here
-var breakfast = {
-    name: "The Lumberjack",
-    price: 9.95,
-    ingredients: ["eggs", "sausage", "toast", "hashbrowns", "pancakes"]
+var savingsAccount = {
+    balance: 1000,
+    interestRatePercent: 1,
+    deposit: function addMoney(amount) {
+        if (amount > 0) {
+            savingsAccount.balance += amount;
+        }
+    },
+    withdraw: function removeMoney(amount) {
+        var verifyBalance = savingsAccount.balance - amount;
+        if (amount > 0 && verifyBalance >= 0) {
+            savingsAccount.balance -= amount;
+        }
+    },
+    // your code goes here
+    printAccountSummary: function accountSummary() {
+        return ("Welcome!\nYour balance is currently $" + savingsAccount.balance + " and your interest rate is " + savingsAccount.interestRatePercent +"%.");
+    }
 };
+
+console.log(savingsAccount.printAccountSummary());
