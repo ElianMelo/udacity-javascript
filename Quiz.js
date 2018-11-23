@@ -5,24 +5,19 @@ Objetivo: Mostrar os códigos de quiz utilizados no curso da udacity
 */
 
 /*
- * Programming Quiz: Facebook Friends (7-5)
+ * Programming Quiz: Donuts Revisited (7-6)
  */
 
+var donuts = [
+    { type: "Jelly", cost: 1.22 },
+    { type: "Chocolate", cost: 2.45 },
+    { type: "Cider", cost: 1.59 },
+    { type: "Boston Cream", cost: 5.99 }
+];
+
 // your code goes here
-var facebookProfile = {
-    name: "Elian",
-    friends: 5,
-    messages: ["I don't have money", "i want to break free"],
-    postMessage: function addMessage(message){
-        facebookProfile.messages.push(message);
-    },
-    deleteMessage: function removeMessage(index){
-        facebookProfile.messages.splice(index, 1);
-    },
-    addFriend: function addFriend(){
-        facebookProfile.friends += 1;
-    },
-    removeFriend: function removeFriend(){
-        facebookProfile.friends -= 1;
-    }
-};
+donuts.forEach(showValues);
+
+function showValues(element, index, array){
+    console.log(array[index].type + " donuts cost $" + array[index].cost + " each");
+}
